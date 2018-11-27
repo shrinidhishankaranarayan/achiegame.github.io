@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="image-container">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Three_Men%27s_Morris_variant_board.svg/768px-Three_Men%27s_Morris_variant_board.svg.png">
+<ul>
+  <li *ngFor="let className of classList;let i=index">
+    <div [id]=i  [class]=className (click)="clickFromUser($event.target.id)" [ngClass]="{
+      'userChoice':userClicked[i],
+      'computerChoice':computerClicked[i]
+    }">
+    </div>
+  </li>
+</ul>
+
+
+
+  <!-- <div class="circle crc1"></div>
+<div class="circle crc2"></div>
+<div class="circle crc3"></div>
+<div class="circle crc4"></div>
+<div class="circle crc5"></div>
+<div class="circle crc6"></div>
+<div class="circle crc7"></div>
+<div class="circle crc8"></div>
+<div class="circle crc9"></div> -->
+
+
+  </div>
+
